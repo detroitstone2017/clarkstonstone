@@ -1,0 +1,19 @@
+// =========================================================
+// The main file where we include all we need
+// =========================================================
+@import 'reset';
+@import 'foundation';
+@import 'config';
+@import 'helpers';
+@import 'utilities';
+@import 'base';
+@import 'main';
+@import 'theme';
+
+// temp
+
+
+@import 'components/header';
+@import 'components/general';
+@import 'components/footer';
+@import 'components/globals/gallery';

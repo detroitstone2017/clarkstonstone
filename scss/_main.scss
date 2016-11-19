@@ -1,0 +1,910 @@
+
+
+.wide
+{
+	width: 100%; 
+	transition: all ease .5s;
+}
+
+.boxed
+{
+	max-width: 1140px; 
+	margin: 0 auto;
+	transition: all ease .5s;
+}
+
+.icon
+{
+	font-size: rem-calc(16);
+	padding: 0 rem-calc(5); 
+}
+
+
+// ========================================
+// ========= Detroit Stone
+// ========================================
+
+// General Headings
+
+h1,h2,h3,h4,h5,h6 { color: #616264; }
+
+h1 
+{
+    font-weight:100;
+    font-size: rem-calc(20);
+    line-height: rem-calc(32);
+      
+    @include breakpoint(large)
+    {
+        font-size: rem-calc(30);
+        line-height: rem-calc(42); 
+    }
+}
+
+h2
+{
+    font-size: rem-calc(18);
+    line-height: rem-calc(28);
+    @include breakpoint(large)
+    {
+        font-size: rem-calc(22);
+        line-height: rem-calc(31)  
+    }
+}
+
+h3
+{
+    font-size: rem-calc(17);
+    line-height: rem-calc(27);
+    @include breakpoint(large)
+    {
+        font-size: rem-calc(18);
+        line-height: rem-calc(25)  
+    }
+}
+
+h4
+{
+    font-size: rem-calc(16);
+    line-height: rem-calc(26);
+    @include breakpoint(large)
+    {
+        font-size: rem-calc(16);
+        line-height: rem-calc(18)  
+    }
+}
+
+h5
+{
+    font-size: rem-calc(14);
+    line-height: rem-calc(24);
+    @include breakpoint(large)
+    {
+        font-size: rem-calc(16);
+        line-height: rem-calc(16)  
+    }
+}
+
+h6
+{
+    font-size: rem-calc(14);
+    line-height: rem-calc(24);
+    @include breakpoint(large)
+    {
+        font-size: rem-calc(26);
+        line-height: rem-calc(36)  
+    }
+}
+
+
+#breadcrumbs {font-size: rem-calc(13) !important; font-weight:100;}
+.column:last-child:not(:first-child), .columns:last-child:not(:first-child) { float:left; }
+.site-header.header-style-1 .header-container .main-navigation { text-align: right;  }
+ li.cta .free-quote { transition: all .5s; border: 2px solid #FF943D; border-radius: 20px; font-weight: bold; padding: 10px; margin-right: 15px;  }
+li.cta .free-quote:hover { border-radius: 0px; }
+
+
+.site-header.header-style-1 .header-container .main-navigation > ul > li:hover,
+.site-header.header-sticky.active .header-tools .header-icons li a .shopping_bag_items_number, 
+.site-header.header-sticky.active .main-navigation > ul > li.current-menu-item > a
+{ background-color: transparent !important;}
+
+
+.slick-arrow {display: none!important;}
+img.rounded {border-radius: 2px; margin-top: 15px;}
+
+
+
+// Products Shortcode
+
+.products-container
+{
+    &:after
+    {
+        content: "";
+        display: block;
+        clear: both; 
+    }
+
+    margin: 40px -15px; 
+
+    .product-image
+    {
+        margin-bottom: rem-calc(50);
+         
+        a
+        {
+            img
+            {
+                height: rem-calc(250); 
+            }
+        }
+
+        p.title
+        {
+            text-align: center;
+            font-size: rem-calc(16);
+            padding: rem-calc(15) 0; 
+            
+            a
+            {
+                color: #2c3e50;
+                transition: all .5s;
+                
+                &:hover
+                {
+                    color: #FF943D;
+                }
+            }
+            
+        }
+
+
+        &:hover
+        {
+            
+            box-shadow:0 1px 14px rgba(0, 0, 0, 1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            
+        }
+    }
+}
+
+
+
+// Header Top Bar
+
+.header-top-bar
+{ 
+    background: rgba(0,0,0, .6) !important; 
+    font-size: rem-calc(12); 
+    
+    .header-topbar-content
+    {
+        .header-topbar-info, 
+        .header-topbar-social 
+        {
+            ul li a
+            {
+                font-weight: 100;
+                font-size: 12px !important; 
+                 
+            }
+        }
+
+        .header-top-bar-widget
+        {
+            font-style: normal !important; 
+            font-weight: 100 !important;
+        }
+    }
+}
+
+
+// Slider
+
+.slider-container
+{
+    position: relative;
+    overflow: hidden;
+    min-height: 220px;
+    
+     @include breakpoint(1200)
+    {
+        height: 705px; 
+        top: -142px; 
+    }
+    
+    img
+    {
+        width: 100%;
+        min-height: 220px; 
+        
+        @include breakpoint(1200)
+        {
+            height: 705px; 
+        }
+    }
+
+    
+    p.slider-title
+    { 
+        position: absolute; 
+        text-align: center;
+        font-size: rem-calc(16); 
+        line-height: rem-calc(24); 
+        text-transform: uppercase;
+        top: 15px; 
+        width: 100%;
+        color: #fff;
+        font-weight: bold; 
+        
+        @include breakpoint(640)
+        {
+            font-size: rem-calc(26);
+            line-height: rem-calc(32); 
+            top: 50px; 
+        }
+                
+        @include breakpoint(1200)
+        {
+            font-size: rem-calc(60); 
+            line-height: rem-calc(60); 
+            top: 240px; 
+        }
+        
+    }
+
+    p.slider-content
+    { 
+        position: absolute;
+        text-align: center;
+        font-size: rem-calc(12);
+        top: 70px; 
+        width: 100%;
+        color: #fff;
+        z-index: 99;
+        padding: 0 rem-calc(30); 
+
+       @include breakpoint(640)
+        {
+            font-size: rem-calc(16);
+            line-height: rem-calc(24);  
+            padding: rem-calc(50);
+            top: 80px
+        } 
+        
+       @include breakpoint(1200)
+        {
+            
+            top: 400px; 
+            font-size: rem-calc(16); 
+            padding: 0 35%;
+        }
+
+        
+        
+        a.slider-btn 
+        { 
+            display: block;
+            padding: rem-calc(5) rem-calc(20);
+            background: #FFF;
+            color: #000;
+            width: rem-calc(250);
+            margin: rem-calc(10) auto 0;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: all .5s;
+            
+            &:hover
+            {
+                border-radius: 10px;
+            }
+
+          
+
+            @include breakpoint(medium)
+            {
+                margin-top: rem-calc(30); 
+            }
+
+              @include breakpoint(xlarge)
+            {
+                margin: rem-calc(85) auto 0;
+            }
+
+       }
+
+    }
+    
+    p.slider-title,
+    p.slider-content
+    {
+        text-shadow: 2px 2px 10px #000;
+    }
+
+    p.slider-content > a
+    {
+        text-shadow: none; 
+    }
+       
+   
+}
+
+
+// Main Menu hover effect
+
+.site-header.header-style-1 .header-container .main-navigation > ul.menu-main > li > a {position: relative;}
+.site-header.header-style-1 .header-container .main-navigation > ul.menu-main > li > a
+{
+    &:before
+    {
+        position: absolute;
+        bottom: 35px; 
+        display: block;
+        width: 0%;
+        height: 1px;
+        background: #616264;
+        margin-left: 0px;
+        transition: all .4s;
+        content: ""; 
+    }
+}
+
+
+.site-header.header-style-1 .header-container .main-navigation > ul.menu-main > li > a
+{
+    &:hover
+    {
+        &:before
+        {
+            width: 100%; 
+        }
+    }
+}
+
+.site-header.header-style-1.header-sticky.active .header-container .main-navigation > ul.menu-main > li > a
+{
+    &:hover
+    {
+        &:before
+        {
+            bottom: 20px;
+        }
+    }
+}
+
+
+.site-header.header-style-1.header-sticky.active .header-container .main-navigation > ul.menu-main > li.menu-item-has-children,
+.site-header.header-style-1 .header-container .main-navigation > ul.menu-main > li.menu-item-has-children > a
+{
+    &:before
+    {
+        display: none;
+    }
+}
+
+
+// Free Quote Form
+
+
+.freequote-overlay,
+.upload-overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    background: rgba(0,0,0,.6); 
+    width: 100%;
+    height: 100%;
+    transition: all .5s; 
+    opacity: 0;
+    z-index: -10;
+    
+    &.active
+    {
+        opacity: 1;
+        z-index: 9999; 
+        transition: all .5s;  
+    }  
+    
+    .freequote-form,
+    .upload-form
+    {
+        position: absolute;
+        transition: all .5s; 
+        width: 300px;
+        top: 50%;
+        left: 50%;
+        height: 450px;
+        background: rgba(212, 213, 214, .9); 
+        transform: translate(-50%, -50%);
+        padding: 40px 30px 30px; 
+
+
+        form.wpcf7-form
+        {
+            transition: all .5s; 
+            
+            input
+            {
+                height: 30px !important; 
+                font-weight: normal;
+                font-size: 14px; 
+                transition: all .5s;
+                
+                &[type="submit"]
+                {
+                    width: 100%;
+                    outline: none;
+                    border: none;
+                    background: #FF943D;  
+                    cursor: pointer; 
+                    
+                    &:hover
+                    {
+                        border-radius: 10px;
+                    } 
+                }
+            }
+            textarea[rows]
+            {
+                height: 30px; 
+            }
+
+            div.wpcf7-validation-errors,
+            div.wpcf7-mail-sent-ok
+
+            {
+                border: none; 
+            }
+
+            div.wpcf7-response-output
+            {
+                font-size: 12px; 
+            }
+
+            div.wpcf7-validation-errors 
+            {
+                color: red; 
+            }
+
+            div.wpcf7-mail-sent-ok
+            {
+                color: green;
+            }
+
+            .wpcf7-not-valid
+            {
+                border: 1px solid #FF3939;  
+            }
+        
+            span.wpcf7-not-valid-tip 
+            {
+                display: none;
+            }
+
+        }
+    }
+}
+
+
+// Menu Offcanvas
+
+.mm-menu .mm-panel
+{
+    top: 182px; 
+    // position: inherit;
+}
+
+
+
+// Site Header
+
+.site-header
+{
+    &.header-style-1
+    {
+        .header-container
+        {
+            .header-tools
+            {
+                padding-left: 0!important;
+                
+                .header-icons
+                {
+                    padding-left: 0 !important;
+                }
+            }
+
+            .main-navigation
+            {
+                ul
+                {
+                    li.menu-item
+                    {
+                        @include breakpoint(medium)
+                        {
+                            padding: 0 rem-calc(5); 
+                        }
+
+                       a
+                       {
+                            @include breakpoint(medium)
+                            {
+                                font-size: rem-calc(12); 
+                            }
+                       }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+.offcanvas-header
+{
+    background: #FFF;
+    padding: 20px 0px 50px; 
+    position: relative;
+    z-index: 999; 
+    text-align: center;
+    
+    ul
+    {
+        margin: 0;
+        list-style-type: none;
+        
+        li.email
+        {
+            padding-bottom: 20px; 
+        }
+    }  
+}
+
+
+#lightbox span.lb-number
+{
+    display: none !important;
+}
+
+
+
+li.cta 
+{
+    
+    a
+    {
+        @include breakpoint(large)
+        {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            margin-right: 0 !important; 
+        }
+    }
+    
+    
+}
+
+// HomePage Detroit Stone
+
+
+
+.home-overtitle,
+.home-title
+{
+    text-align: center;
+}
+
+
+.home-title
+{
+    color: #FF943D;
+    text-shadow: .2px .2px #616264;
+    font-weight: bold;
+    margin-bottom: 0;
+    
+}
+
+.first
+{
+    background: #F2F2F2;
+    transition: all .5s;
+   
+    
+    @include breakpoint(medium)
+    {
+         padding: rem-calc(30) 0 rem-calc(15); 
+    }
+    
+    &.section
+    {
+        margin-top: 0;
+    }
+
+    img
+    {
+        transition: all .5s;
+        &:hover
+        {
+           filter: blur(1px);
+        }
+    }
+   
+}
+
+
+.intro
+{
+    @include breakpoint(medium)
+    {
+        padding-bottom: rem-calc(30); 
+        padding-top: rem-calc(30); 
+    }
+}
+
+.section
+{
+    margin: rem-calc(25) 0;
+     
+    @include breakpoint(medium)
+    {
+         margin: rem-calc(50) 0;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px)
+{
+    .intro
+    {
+        padding: rem-calc(30) 0; 
+        
+        .home-title
+        {
+            .phone
+            {
+                display: block;
+            }
+        }
+    }
+}
+
+
+.header-search
+{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+// Categories Posts Clarkstone
+
+.archive-category
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+    .entry-title
+    {
+        margin-bottom: 40px; 
+    }
+     
+    &:after
+    {
+        content: "";
+        display: block;
+        clear: both; 
+    }
+
+    .title
+    {
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-size: rem-calc(15);
+        padding: rem-calc(5) 0;  
+    }
+
+    .category
+    {
+        margin-bottom: 40px; 
+        
+        
+
+        &:hover
+        {
+            .boxshadow
+            {
+                box-shadow:0 1px 14px rgba(0, 0, 0, 1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            }
+        }
+        
+        
+        .category-image-wrapper
+        {
+            padding: 5px; 
+            position: relative;
+            
+            
+
+            .category-image
+            {
+                height: 200px; 
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+                margin-bottom: 15px;
+                
+                
+                
+            }
+
+            .link-title
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+
+    }
+}
+
+
+// Post Single Content
+
+
+.post-content
+{
+    margin-top: rem-calc(40);
+     
+    @include breakpoint(1200)
+    {
+        padding-right: rem-calc(40);
+    }
+
+    &:after
+    {
+        content: "";
+        display: block;
+        clear: both; 
+    }
+
+    article
+    {
+        .entry-title
+        {
+            text-align: center;
+            padding-bottom: rem-calc(40); 
+        }
+
+        .entry-thumbnail
+        {
+            text-align: center;
+        }
+
+        .gallery-item
+        {
+            padding-right: 10px;
+            text-align: center; 
+        }
+
+        table
+        {
+            border-collapse: collapse;
+    
+            > tbody
+            {
+                border: none;
+                 
+                > tr
+                {
+                    > td
+                    {
+                        
+                        padding: 20px; 
+                    }
+                } 
+            }
+            
+           
+        }
+    }
+}
+
+.sidebar
+{
+    margin-top: 40px;
+     
+    &:after
+    {
+        content: "";
+        display: block;
+        clear: both; 
+    }
+}
+
+
+
+/*==================================================
+ * Box Shadow Effect
+ * ===============================================*/
+.boxshadow
+{
+    position:relative;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    transition: all .5s;
+}
+.boxshadow:before, .boxshadow:after
+{
+    content:"";
+    position:absolute; 
+    z-index:-1;
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    border-radius:100px / 10px;
+} 
+.boxshadow:after
+{
+    right:10px; 
+    left:auto; 
+    transform:skew(8deg) rotate(3deg);
+}
+
+
+/// Progress Bar
+
+.progress-meter,
+.progress
+{
+    height: 30px; 
+}
+
+.progress-meter
+{
+    background: #ff9f00; 
+    padding: 5px 0 0 20px; 
+    color: #FFF; 
+}
+
+
+.button
+{
+    background: #ff9f00; 
+    color: #FFF; 
+}
+
+.center
+{
+    text-align: center;
+    margin-top: 40px; 
+}
+
+
+
+.header-top-bar {background:#fff!important;}
+p.home-text {padding-top:30px; text-align:center;}
+.gallery .gallery-icon img {width:auto;}
+.round {border-radius: 50%;}
+#breadcrumbs {margin-top:10px;}
+.site-header {box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)}
+
+/* image effect dropshadow */
+
+.imagedropshadow {
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+}
+

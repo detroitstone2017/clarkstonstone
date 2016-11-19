@@ -1,0 +1,57 @@
+.header-top-bar
+{
+    background: $color-primary; 
+    padding: rem-calc(10); 
+    
+    .header-topbar-content
+	{	
+		@include clearfix();
+
+	    .header-topbar-info,
+	    .header-topbar-social
+	    {
+	    	
+			@include list-inline();	
+			font-weight: normal;
+			ul
+			{
+				li
+				{
+					a
+					{
+						color: $white; 
+						font-weight: normal;
+						font-size: rem-calc(14);
+						letter-spacing: .05em; 
+						font-weight: 500; 
+						
+						i
+						{
+							padding-right: rem-calc(10);
+						}
+					}
+				}
+			}
+	    } 	
+	    
+	    .header-topbar-info
+	    {
+	    	float: left;
+	    }
+
+	    .header-topbar-social
+	    {
+	    	float: right;
+	    	
+	    	ul
+	    	{
+	    		li
+	    		{
+	    			padding: 0;
+	    		}
+	    	}
+	    }
+	}
+	
+
+}

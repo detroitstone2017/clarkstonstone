@@ -1,0 +1,16 @@
+body.home .page-wrapper
+{
+	margin-top: 0; 
+	
+	@include breakpoint(640)
+	{
+		margin-top: -16px; 
+	}
+	
+	@include breakpoint(1200)
+	{
+		margin-top: -142px; 
+	}
+	 
+}
+
