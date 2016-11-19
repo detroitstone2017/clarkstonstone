@@ -34,3 +34,5 @@
         <div class="page-wrapper">                
 
         	<div class="site-content">
+
+        	<?php echo 'test'; ?>
