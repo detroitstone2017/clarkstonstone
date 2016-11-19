@@ -18,6 +18,10 @@
 					?>
 
 
+
+					
+
+
 					<div class="archive-category">
 
 						<h1 class="entry-title"> <?php wp_title(''); ?> </h1>
