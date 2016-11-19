@@ -628,10 +628,15 @@ li.cta
     img
     {
         transition: all .5s;
-        &:hover
+        
+        @include breakpoint(1200)
         {
-           filter: blur(1px);
+            &:hover
+            {
+               filter: blur(1px);
+            }
         }
+        
     }
    
 }

@@ -3434,8 +3434,10 @@ img.rounded {
   transition: all .5s;
 }
 
-.first img:hover {
-  filter: blur(1px);
+@media screen and (min-width: 75em) {
+  .first img:hover {
+    filter: blur(1px);
+  }
 }
 
 @media print, screen and (min-width: 40em) {
@@ -4326,7 +4328,7 @@ body.header-boxed .site-header .header-container {
 }
 
 .site-header.header-style-1 .header-container .header-branding .logo {
-  max-width: 11.25rem;
+  max-width: 13.25rem;
   transition: max-width .4s ease,margin .4s ease,opacity .2s .2s ease;
 }
 

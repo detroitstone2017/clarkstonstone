@@ -165,8 +165,10 @@ jQuery(function($) {
 		        fade: true,
 		        focusOnSelect: true,
 		        lazyLoad: 'ondemand',
-		        speed: 1000
-	    });
+		        speed: 3000,
+		        autoplay: true,
+		        autoplaySpeed: 3000
+	  		});
 	      
 
      
