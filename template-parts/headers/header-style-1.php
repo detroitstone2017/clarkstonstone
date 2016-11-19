@@ -11,7 +11,8 @@ global $custom_header_logo,
 	   $custom_header_transparent_scheme,
 	   $custom_header_transparent,
 	   $custom_header_transparent_light_logo,
-	   $custom_header_transparent_dark_logo;
+	   $custom_header_transparent_dark_logo,
+	   $custom_header_top_bar_phone;
 
 
         /*******************************************/
@@ -104,7 +105,7 @@ global $custom_header_logo,
 
 				<li class="cta">
 					<a class="free-quote" href="#">Free Project Quote</a>
-					<a href="tel: 248-383-1503">248-383-1503</a>
+					<a href="tel: <?php echo $custom_header_top_bar_phone; ?> "> <?php echo $custom_header_top_bar_phone; ?></a>
 				</li>
 
 			</ul>

@@ -57,7 +57,8 @@
 					<ul>
 						<?php if ( !empty($custom_header_top_bar_phone )) : ?>
 						<li class="phone">
-							<a href="tel: +40 21 356 987"><i class="fa fa-phone-square" aria-hidden="true"></i><?php echo esc_html($custom_header_top_bar_phone); ?></a>
+							<a href="tel: <?php echo $custom_header_top_bar_phone; ?> "> <i class="fa fa-phone-square" aria-hidden="true"></i><?php echo esc_html($custom_header_top_bar_phone); ?></a>
+
 						</li>
 
 						<?php endif; ?>
