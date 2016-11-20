@@ -27,9 +27,8 @@
 						<h1 class="entry-title"> <?php wp_title(''); ?> </h1>
 
 							<div class="row">
-							<?php
 
-							
+							<?php
 
 								$args = array(
 									
@@ -62,6 +61,9 @@
 
 										$categories = get_categories( $args );
 
+
+
+
 										?>
 
 
@@ -70,8 +72,7 @@
 
 										foreach ( $categories as $category ) : ?>
 
-
-
+											
 											<div class="large-3 columns category">
 
 												<div class="category-image-wrapper boxshadow">
@@ -80,6 +81,7 @@
 													
 													<p class="title">
 														<a href="<?php echo get_category_link( $category->term_id ); ?>" rel="bookmark"><i class="ss-icon" aria-hidden="true"><?php echo $category->name; ?></i><?php echo $category->description; ?>
+															<span class="category-count"><?php echo '(' . $category->count . ')'; ?> </span>
 
 														</a>
 													</p>
