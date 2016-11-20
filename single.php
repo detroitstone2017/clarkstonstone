@@ -16,6 +16,19 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+		<div class="row">
+			<div class="large-12 columns">
+				<?php
+					if ( function_exists('yoast_breadcrumb') ) {
+					yoast_breadcrumb('
+					<p id="breadcrumbs">','</p>
+					');
+					}
+				?>
+			</div>
+		</div>
+
+
 			<?php
 				/* Start the Loop */
 				while ( have_posts() ) : the_post();

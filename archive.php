@@ -18,10 +18,6 @@
 					?>
 
 
-
-					
-
-
 					<div class="archive-category">
 
 						<h1 class="entry-title"> <?php wp_title(''); ?> </h1>
@@ -56,13 +52,9 @@
 											'pad_counts'         => 0,
 											'taxonomy'           => 'category',
 											'walker'             => null,
-
 										); 
 
 										$categories = get_categories( $args );
-
-
-
 
 										?>
 
@@ -73,11 +65,11 @@
 										foreach ( $categories as $category ) : ?>
 
 											
-											<div class="large-3 columns category">
+											<div class="xlarge-3 large-3 medium-6 columns category">
 
 												<div class="category-image-wrapper boxshadow">
 
-													<a href="<?php echo  z_taxonomy_image_url($category->term_id); ?>" rel="lightbox"><div class="category-image" style="background-image: url(<?php echo z_taxonomy_image_url($category->term_id); ?> )"></div> </a>
+													<a href="<?php echo get_category_link( $category->term_id ); ?>" rel="bookmark"><div class="category-image" style="background-image: url(<?php echo z_taxonomy_image_url($category->term_id); ?> )"></div> </a>
 													
 													<p class="title">
 														<a href="<?php echo get_category_link( $category->term_id ); ?>" rel="bookmark"><i class="ss-icon" aria-hidden="true"><?php echo $category->name; ?></i><?php echo $category->description; ?>
