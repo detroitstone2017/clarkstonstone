@@ -3471,22 +3471,26 @@ img.rounded {
   margin: 0 auto;
 }
 
-.archive-category {
+.archive-category,
+.orphan-category-posts {
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-.archive-category .entry-title {
+.archive-category .entry-title,
+.orphan-category-posts .entry-title {
   margin-bottom: 40px;
 }
 
-.archive-category:after {
+.archive-category:after,
+.orphan-category-posts:after {
   content: "";
   display: block;
   clear: both;
 }
 
-.archive-category .title {
+.archive-category .title,
+.orphan-category-posts .title {
   text-align: center;
   overflow: hidden;
   white-space: nowrap;
@@ -3495,20 +3499,24 @@ img.rounded {
   padding: 0.3125rem 0;
 }
 
-.archive-category .category {
+.archive-category .category,
+.orphan-category-posts .category {
   margin-bottom: 40px;
 }
 
-.archive-category .category:hover .boxshadow {
+.archive-category .category:hover .boxshadow,
+.orphan-category-posts .category:hover .boxshadow {
   box-shadow: 0 1px 14px black, 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-.archive-category .category .category-image-wrapper {
+.archive-category .category .category-image-wrapper,
+.orphan-category-posts .category .category-image-wrapper {
   padding: 5px;
   position: relative;
 }
 
-.archive-category .category .category-image-wrapper .category-image {
+.archive-category .category .category-image-wrapper .category-image,
+.orphan-category-posts .category .category-image-wrapper .category-image {
   height: 200px;
   background-size: cover;
   background-position: center center;
@@ -3516,7 +3524,8 @@ img.rounded {
   margin-bottom: 15px;
 }
 
-.archive-category .category .category-image-wrapper .link-title {
+.archive-category .category .category-image-wrapper .link-title,
+.orphan-category-posts .category .category-image-wrapper .link-title {
   position: absolute;
   top: 0;
   left: 0;
@@ -3653,6 +3662,12 @@ p.home-text {
 .imagedropshadow {
   padding: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.orphan-category-posts:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 body {

@@ -73,44 +73,44 @@
 							    }?> 
 
 
-							    <?php
-
-
-
-											// The Query
-											$query = new WP_Query( array( 'category__in' => 250, 'category_name' => 'flooring-collections' ) );
-
-
-											// The Loop
-											if ( $query->have_posts() ) {
-												while ( $query->have_posts() ) {
-													$query->the_post();
-													get_template_part( 'template-parts/content/content', 'category' );
-												}
-												/* Restore original Post Data */
-												wp_reset_postdata();
-											} else {
-												
-											}
-								
-
-										?>
-
-
-								<?php
-
-								$args = array(
-									'screen_reader_text' => __( ' ', 'sava' ),
-
-								);
-
-								?>
 
 
 
 					</div>
 
 				</div>
+
+
+			    <div class="orphan-category-posts">
+
+			    	<div class="row">
+
+		   				 <?php
+
+						// The Query
+						$query = new WP_Query( array( 'category__in' => 250, 'category_name' => 'flooring-collections', 'orderby'=> 'title', 'order' => 'ASC' ) );
+
+
+						// The Loop
+						if ( $query->have_posts() ) {
+							while ( $query->have_posts() ) {
+								$query->the_post();
+								get_template_part( 'template-parts/content/content', 'category' );
+							}
+							/* Restore original Post Data */
+							wp_reset_postdata();
+						} else {
+							
+						}
+			
+
+					?>
+
+					</div>
+				
+
+				</div>
+
 			</div>
 
 		</main><!-- #main -->

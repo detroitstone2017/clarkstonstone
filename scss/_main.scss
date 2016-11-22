@@ -690,7 +690,8 @@ li.cta
 
 // Categories Posts Clarkstone
 
-.archive-category
+.archive-category,
+.orphan-category-posts
 {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -913,3 +914,14 @@ p.home-text {padding-top:30px; text-align:center;}
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
 }
 
+
+
+.orphan-category-posts
+{
+    &:after
+    {
+        content: "";
+        display: block;
+        clear: both; 
+    }
+}
