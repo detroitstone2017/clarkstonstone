@@ -48,7 +48,7 @@
 
 														<div class="category-image-wrapper boxshadow">
 
-															<a href="<?php echo get_term_link( $term->term_id ); ?>" rel="bookmark"><div class="category-image" style="background-image: url(<?php echo z_taxonomy_image_url($term->term_id); ?> )"></div> </a>
+															<a href="<?php echo get_term_link( $term->term_id ); ?>" rel="bookmark"><div class="category-image" style="background-image: url(<?php echo z_taxonomy_image_url($term->term_id, 'medium'); ?> )"></div> </a>
 															
 															<p class="title">
 																<a href="<?php echo get_term_link( $term->term_id ); ?>" rel="bookmark"><i class="ss-icon" aria-hidden="true"><?php echo $term->name; ?></i><?php echo $term->description; ?>
