@@ -1,5 +1,5 @@
 
-<div class="large-3 columns category">
+<div class="xlarge-3 large-3 medium-6 columns category">
 	
 
 	<div class="category-image-wrapper boxshadow">
@@ -11,9 +11,6 @@
 		<a class="link-title" href="<?php the_permalink(); ?>"></a>
 
 	</div>
-
-	 
-	
 
 
 </div>

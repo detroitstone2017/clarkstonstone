@@ -3,6 +3,12 @@
  ?>
 
 
+<!-- Main Archive Page -->
+<!--  ***************************************-->
+<!--  ***************************************-->
+
+
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -33,7 +39,7 @@
 											'order'              => 'ASC',
 											'style'              => 'list',
 											'show_count'         => 0,
-											'hide_empty'         => 1,
+											'hide_empty'         => 0,
 											'use_desc_for_title' => 1,
 											'child_of'           => get_cat_id( single_cat_title("", false) ),
 											'feed'               => '',
@@ -113,13 +119,6 @@
 								?>
 
 
-								<div class="large-12 columns">
-
-							 		<?php the_posts_pagination($args); ?> 
-
-								</div>
-
-										
 
 					</div>
 
