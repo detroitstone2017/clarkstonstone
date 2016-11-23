@@ -3555,7 +3555,8 @@ img.rounded {
 }
 
 .post-content article .entry-thumbnail {
-  text-align: center;
+  text-align: left;
+  margin-bottom: 2.5rem;
 }
 
 .post-content article .gallery-item {
@@ -3631,6 +3632,10 @@ img.rounded {
 .center {
   text-align: center;
   margin-top: 40px;
+}
+
+.center:nth-child(2) {
+  margin-bottom: -50px;
 }
 
 .header-top-bar {
@@ -5205,10 +5210,28 @@ body.home .page-wrapper {
   text-align: center;
 }
 
+.gallery .gallery-icon {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin: 10px;
+  position: relative;
+}
+
 .gallery .gallery-icon img {
   width: 100%;
   border-right: 1px solid #FFF;
   border-bottom: 1px solid #FFF;
+  position: absolute;
+  margin: auto;
+  height: auto;
+  width: auto;
+  /* For the following settings we set 100%, but it can be higher if needed 
+            See the answer's update */
+  left: -100%;
+  right: -100%;
+  top: -100%;
+  bottom: -100%;
 }
 
 .gallery:after {

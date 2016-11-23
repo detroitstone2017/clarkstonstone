@@ -16,17 +16,15 @@ function sava_scripts() {
 
 
 
-	wp_enqueue_script('modernizr-custom', get_template_directory_uri() . '/js/modernizr.custom.js', array('jquery'), '1.0', FALSE);
+	wp_enqueue_script('modernizr-custom', get_template_directory_uri() . '/js/modernizr.custom.js', array('jquery'), '1.0', TRUE);
 
-	wp_enqueue_script('jquery-mm-menu', get_template_directory_uri() . '/js/jquery.mmenu.all.min.js', array('jquery'), '1.0', FALSE);
+	wp_enqueue_script('jquery-mm-menu', get_template_directory_uri() . '/js/jquery.mmenu.all.min.js', array('jquery'), '1.0', TRUE);
 
-	wp_enqueue_script('jquery-slick', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), '1.0', FALSE);
-
+	wp_enqueue_script('jquery-slick', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), '1.0', TRUE);
 
 	wp_enqueue_script('lightbox', get_template_directory_uri() . '/js/lightbox.min.js', array('jquery'), '1.0', TRUE);
 
 	wp_enqueue_script('sava-main-js', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0', TRUE);
-
 
 
 	// Send wp variables to js

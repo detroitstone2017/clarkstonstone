@@ -795,7 +795,8 @@ li.cta
 
         .entry-thumbnail
         {
-            text-align: center;
+            text-align: left;
+            margin-bottom: rem-calc(40); 
         }
 
         .gallery-item
@@ -896,6 +897,11 @@ li.cta
 {
     text-align: center;
     margin-top: 40px; 
+    
+    &:nth-child(2)
+    {
+        margin-bottom: -50px; 
+    }
 }
 
 
