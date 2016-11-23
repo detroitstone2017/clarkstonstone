@@ -3675,6 +3675,29 @@ p.home-text {
   clear: both;
 }
 
+.test-img {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  margin: 10px;
+  position: relative;
+}
+
+.test-img img {
+  position: absolute;
+  margin: auto;
+  min-height: 100%;
+  min-width: 100%;
+  /* For the following settings we set 100%, but it can be higher if needed 
+        See the answer's update */
+  left: -100%;
+  right: -100%;
+  top: -180%;
+  bottom: -100%;
+  border-right: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+}
+
 body {
   width: 100%;
   overflow-x: hidden;
@@ -5210,134 +5233,32 @@ body.home .page-wrapper {
   text-align: center;
 }
 
-.gallery .gallery-icon {
-  width: 250px;
-  height: 250px;
+.gallery .gallery-icon a {
+  width: 200px;
+  height: 200px;
   overflow: hidden;
   margin: 10px;
   position: relative;
+  display: inline-block;
 }
 
-.gallery .gallery-icon img {
-  width: 100%;
-  border-right: 1px solid #FFF;
-  border-bottom: 1px solid #FFF;
+.gallery .gallery-icon a img {
   position: absolute;
   margin: auto;
-  height: auto;
-  width: auto;
+  min-height: 100%;
+  min-width: 100%;
   /* For the following settings we set 100%, but it can be higher if needed 
-            See the answer's update */
+                See the answer's update */
   left: -100%;
   right: -100%;
   top: -100%;
   bottom: -100%;
+  border-right: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
 }
 
 .gallery:after {
   content: "";
   display: block;
   clear: both;
-}
-
-.gallery-columns-1 .gallery-item {
-  width: 100%;
-}
-
-.gallery-columns-2 .gallery-item {
-  width: 100%;
-}
-
-@media print, screen and (min-width: 40em) {
-  .gallery-columns-2 .gallery-item {
-    width: calc(100% / 2);
-  }
-}
-
-.gallery-columns-2 .gallery-item:nth-child(2n+2):after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.gallery-columns-3 .gallery-item {
-  width: 100%;
-}
-
-@media print, screen and (min-width: 40em) {
-  .gallery-columns-3 .gallery-item {
-    width: calc(100% / 3);
-  }
-}
-
-.gallery-columns-3 .gallery-item:nth-child(3n+3):after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.gallery-columns-4 .gallery-item {
-  width: 100%;
-}
-
-@media print, screen and (min-width: 40em) {
-  .gallery-columns-4 .gallery-item {
-    width: calc(100% / 4);
-  }
-}
-
-.gallery-columns-4 .gallery-item:nth-child(4n+4):after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.gallery-columns-5 .gallery-item {
-  width: 100%;
-}
-
-@media print, screen and (min-width: 40em) {
-  .gallery-columns-5 .gallery-item {
-    width: calc(100% / 5);
-  }
-}
-
-.gallery-columns-6 .gallery-item {
-  width: 100%;
-}
-
-@media print, screen and (min-width: 40em) {
-  .gallery-columns-6 .gallery-item {
-    width: calc(100% / 6);
-  }
-}
-
-.gallery-columns-7 .gallery-item {
-  width: 100%;
-}
-
-@media print, screen and (min-width: 40em) {
-  .gallery-columns-7 .gallery-item {
-    width: calc(100% / 7);
-  }
-}
-
-.gallery-columns-8 .gallery-item {
-  width: 100%;
-}
-
-@media print, screen and (min-width: 40em) {
-  .gallery-columns-8 .gallery-item {
-    width: calc(100% / 8);
-  }
-}
-
-.gallery-columns-9 .gallery-item {
-  width: 100%;
-}
-
-@media print, screen and (min-width: 40em) {
-  .gallery-columns-9 .gallery-item {
-    width: calc(100% / 9);
-  }
 }

@@ -14,33 +14,35 @@
 
     .gallery-icon
     {
-        width: 250px;
-        height: 250px;
-        overflow: hidden;
-        margin: 10px;
-        position: relative;
-        
-        img
+        a
         {
-            width: 100%;
-            border-right: 1px solid #FFF;  
-            border-bottom: 1px solid #FFF;
-            position: absolute;
-            margin: auto; 
-            // min-height: 100%;
-            // min-width: 100%;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            margin: 10px;
+            position: relative;
+            display: inline-block;
             
-             height: auto;
-              width: auto;
+             img
+            {
+                position: absolute;
+                margin: auto; 
+                min-height: 100%;
+                min-width: 100%;
 
-            /* For the following settings we set 100%, but it can be higher if needed 
-            See the answer's update */
-            left: -100%;
-            right: -100%;
-            top: -100%;
-            bottom: -100%;
-    
+                /* For the following settings we set 100%, but it can be higher if needed 
+                See the answer's update */
+                left: -100%;
+                right: -100%;
+                top: -100%;
+                bottom: -100%;
+                border-right: 1px solid #FFF;  
+                border-bottom: 1px solid #FFF;
+            }
+
         }
+    
+       
     }
 
     &:after
@@ -51,147 +53,147 @@
     }
 }
 
-.gallery-columns-1
-{
-    .gallery-item
-    {
-        width: 100%; 
-    }
-}
+// .gallery-columns-1
+// {
+//     .gallery-item
+//     {
+//         width: 100%; 
+//     }
+// }
 
-.gallery-columns-2
-{
-    .gallery-item
-    {
-        width: 100%; 
+// .gallery-columns-2
+// {
+//     .gallery-item
+//     {
+//         width: 100%; 
         
-        @include breakpoint(medium)
-        {
-            width: calc(100% / 2);
-        }
+//         @include breakpoint(medium)
+//         {
+//             width: calc(100% / 2);
+//         }
 
-        &:nth-child(2n+2)
-        {
-            &:after
-            {
-                content: "";
-                display: block;
-                clear: both;
-            }
-        }
+//         &:nth-child(2n+2)
+//         {
+//             &:after
+//             {
+//                 content: "";
+//                 display: block;
+//                 clear: both;
+//             }
+//         }
         
-    }
-}
+//     }
+// }
 
-.gallery-columns-3
-{
-    .gallery-item
-    {
-        width: 100%; 
+// .gallery-columns-3
+// {
+//     .gallery-item
+//     {
+//         width: 100%; 
         
-        @include breakpoint(medium)
-        {
-            width: calc(100% / 3);
-        }
+//         @include breakpoint(medium)
+//         {
+//             width: calc(100% / 3);
+//         }
         
-        &:nth-child(3n+3)
-        {
-            &:after
-            {
-                content: "";
-                display: block;
-                clear: both;
-            }
-        }
+//         &:nth-child(3n+3)
+//         {
+//             &:after
+//             {
+//                 content: "";
+//                 display: block;
+//                 clear: both;
+//             }
+//         }
         
-    }
-}
+//     }
+// }
 
-.gallery-columns-4
-{
-    .gallery-item
-    {
-        width: 100%; 
+// .gallery-columns-4
+// {
+//     .gallery-item
+//     {
+//         width: 100%; 
         
-        @include breakpoint(medium)
-        {
-            width: calc(100% / 4);
-        }
+//         @include breakpoint(medium)
+//         {
+//             width: calc(100% / 4);
+//         }
         
-        &:nth-child(4n+4)
-        {
-            &:after
-            {
-                content: "";
-                display: block;
-                clear: both;
-            }
-        }
+//         &:nth-child(4n+4)
+//         {
+//             &:after
+//             {
+//                 content: "";
+//                 display: block;
+//                 clear: both;
+//             }
+//         }
         
-    }
-}
+//     }
+// }
 
-.gallery-columns-5
-{
-    .gallery-item
-    {
-        width: 100%; 
+// .gallery-columns-5
+// {
+//     .gallery-item
+//     {
+//         width: 100%; 
         
-        @include breakpoint(medium)
-        {
-            width: calc(100% / 5);
-        }    
-    }
-}
+//         @include breakpoint(medium)
+//         {
+//             width: calc(100% / 5);
+//         }    
+//     }
+// }
 
-.gallery-columns-6
-{
-    .gallery-item
-    {
-        width: 100%; 
+// .gallery-columns-6
+// {
+//     .gallery-item
+//     {
+//         width: 100%; 
         
-        @include breakpoint(medium)
-        {
-            width: calc(100% / 6);
-        }  
-    }
-}
+//         @include breakpoint(medium)
+//         {
+//             width: calc(100% / 6);
+//         }  
+//     }
+// }
 
-.gallery-columns-7
-{ 
-    .gallery-item
-    {
-        width: 100%; 
+// .gallery-columns-7
+// { 
+//     .gallery-item
+//     {
+//         width: 100%; 
         
-        @include breakpoint(medium)
-        {
-            width: calc(100% / 7);
-        }  
-    }
-}
+//         @include breakpoint(medium)
+//         {
+//             width: calc(100% / 7);
+//         }  
+//     }
+// }
 
-.gallery-columns-8
-{
-    .gallery-item
-    {
-        width: 100%; 
+// .gallery-columns-8
+// {
+//     .gallery-item
+//     {
+//         width: 100%; 
         
-        @include breakpoint(medium)
-        {
-            width: calc(100% / 8);
-        } 
-    }
-}
+//         @include breakpoint(medium)
+//         {
+//             width: calc(100% / 8);
+//         } 
+//     }
+// }
 
- .gallery-columns-9
-{
-    .gallery-item
-    {
-        width: 100%; 
+//  .gallery-columns-9
+// {
+//     .gallery-item
+//     {
+//         width: 100%; 
         
-        @include breakpoint(medium)
-        {
-            width: calc(100% / 9);
-        } 
-    }
-}
+//         @include breakpoint(medium)
+//         {
+//             width: calc(100% / 9);
+//         } 
+//     }
+// }
