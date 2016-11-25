@@ -424,8 +424,8 @@ img.rounded {border-radius: 2px; margin-top: 15px;}
     {
         position: absolute;
         top: 0px;
-        right: 21px;
-        padding: 10px 10px 0px 10px;
+        right: 0px;
+        padding: 5px 10px 5px 10px;
         cursor: pointer;
     }
     
@@ -929,6 +929,7 @@ li.cta
 {
     text-align: center;
     margin-top: 40px; 
+    display: inline-block;
     
     &:nth-child(2)
     {
