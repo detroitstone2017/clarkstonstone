@@ -200,11 +200,31 @@ jQuery(function($) {
 
 
 
-	  $('.upload-form').click(function() {
+	  $('.button.upload-form').click(function() {
 
 	  	$('.upload-overlay').addClass('active');
 
 	  });
+
+
+	   $('.btn-close-upload').click(function() {
+
+	  		if (   $('.upload-overlay').hasClass('active')  )
+	  		{
+	  			$('.upload-overlay').removeClass('active');
+	  		}
+	  });
+
+
+
+	  $('.custom-form-close-btn-1').click(function() {
+
+	  		if (   $('.freequote-overlay').hasClass('active')  )
+	  		{
+	  			$('.freequote-overlay').removeClass('active');
+	  		}
+	  });
+
 
 
 	  $(document).on('click', '.freequote-overlay', function(e) {
@@ -222,6 +242,8 @@ jQuery(function($) {
 	  	}
 
 	  });
+
+
 
 
 });

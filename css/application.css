@@ -3246,6 +3246,17 @@ img.rounded {
   transition: all .5s;
 }
 
+.freequote-overlay .custom-form-close-btn-1,
+.freequote-overlay .btn-close-upload,
+.upload-overlay .custom-form-close-btn-1,
+.upload-overlay .btn-close-upload {
+  position: absolute;
+  top: 0px;
+  right: 21px;
+  padding: 10px 10px 0px 10px;
+  cursor: pointer;
+}
+
 .freequote-overlay .freequote-form,
 .freequote-overlay .upload-form,
 .upload-overlay .freequote-form,

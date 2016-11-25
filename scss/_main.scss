@@ -402,12 +402,25 @@ img.rounded {border-radius: 2px; margin-top: 15px;}
     opacity: 0;
     z-index: -10;
     
+    
+    
     &.active
     {
         opacity: 1;
         z-index: 9999; 
         transition: all .5s;  
     }  
+    
+    .custom-form-close-btn-1,
+    .btn-close-upload
+    {
+        position: absolute;
+        top: 0px;
+        right: 21px;
+        padding: 10px 10px 0px 10px;
+        cursor: pointer;
+    }
+    
     
     .freequote-form,
     .upload-form
