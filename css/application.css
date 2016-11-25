@@ -3164,7 +3164,7 @@ img.rounded {
   background: #FFF;
   color: #000;
   width: 15.625rem;
-  margin: 0.625rem auto 0;
+  margin: 4.6875rem auto 0;
   text-transform: uppercase;
   font-weight: bold;
   transition: all .5s;
@@ -3183,6 +3183,12 @@ img.rounded {
 @media screen and (min-width: 75em) {
   .slider-container p.slider-content a.slider-btn {
     margin: 5.3125rem auto 0;
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .slider-container p.slider-title {
+    margin-top: 2.5rem;
   }
 }
 
@@ -3289,6 +3295,15 @@ img.rounded {
   transition: all .5s;
 }
 
+@media screen and (max-width: 39.9375em) {
+  .freequote-overlay .freequote-form form.wpcf7-form input,
+  .freequote-overlay .upload-form form.wpcf7-form input,
+  .upload-overlay .freequote-form form.wpcf7-form input,
+  .upload-overlay .upload-form form.wpcf7-form input {
+    margin-bottom: 2rem;
+  }
+}
+
 .freequote-overlay .freequote-form form.wpcf7-form input[type="submit"],
 .freequote-overlay .upload-form form.wpcf7-form input[type="submit"],
 .upload-overlay .freequote-form form.wpcf7-form input[type="submit"],
@@ -3386,7 +3401,7 @@ img.rounded {
 
 .offcanvas-header {
   background: #FFF;
-  padding: 20px 0px 50px;
+  padding: 20px 0px 35px;
   position: relative;
   z-index: 999;
   text-align: center;
@@ -3474,6 +3489,12 @@ img.rounded {
   }
   .intro .home-title .phone {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) and (max-width: 63.9375em) {
+  .intro .home-title .phone {
+    margin-top: 1.875rem;
   }
 }
 
@@ -5083,9 +5104,11 @@ body.header-boxed .site-header .header-container {
   height: 100vh;
 }
 
-.offcanvas-right .offcanvas-menu-content .offcanvas-header ul li.cta .free-quote {
-  display: block;
-  margin: 0px 15px 5px;
+@media screen and (max-width: 63.9375em) {
+  .offcanvas-right .offcanvas-menu-content .offcanvas-header ul li.cta .free-quote {
+    display: block;
+    margin: 0px 15px 23px;
+  }
 }
 
 .offcanvas-right .offcanvas-menu-content .offcanvas-navigation {
