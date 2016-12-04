@@ -3278,7 +3278,7 @@ img.rounded {
 .freequote-overlay .upload-form form.wpcf7-form input,
 .upload-overlay .freequote-form form.wpcf7-form input,
 .upload-overlay .upload-form form.wpcf7-form input {
-  height: 30px !important;
+  height: 40px !important;
   font-weight: normal;
   font-size: 14px;
   transition: all .5s;
@@ -3390,7 +3390,7 @@ img.rounded {
 
 .offcanvas-header {
   background: #FFF;
-  padding: 20px 0px 35px;
+  padding: 45px 0px 35px;
   position: relative;
   z-index: 999;
   text-align: center;
@@ -5077,11 +5077,28 @@ body.header-boxed .site-header .header-container {
 
 .offcanvas-right .offcanvas_close {
   position: absolute;
-  right: 25px;
-  top: 6px;
-  z-index: 9;
+  left: 0px;
+  top: 0px;
+  z-index: 9999;
   cursor: pointer;
   color: #3496E8;
+  font-size: 22px;
+  background: #000;
+  color: #fff;
+  padding: 5.5px 7px;
+  font-weight: lighter;
+  line-height: 0;
+  text-align: center;
+  vertical-align: text-bottom;
+}
+
+.offcanvas-right .offcanvas_close .close-thik {
+  color: #FFF;
+  font: 14px/100% arial, sans-serif;
+}
+
+.offcanvas-right .offcanvas_close .close-thik:after {
+  content: '✖';
 }
 
 .offcanvas-right .offcanvas-right-header {
@@ -5096,7 +5113,7 @@ body.header-boxed .site-header .header-container {
 @media screen and (max-width: 63.9375em) {
   .offcanvas-right .offcanvas-menu-content .offcanvas-header ul li.cta .free-quote {
     display: block;
-    margin: 0px 15px 23px;
+    margin: 0px 15px 37px;
   }
 }
 

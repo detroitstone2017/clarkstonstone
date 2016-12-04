@@ -117,7 +117,7 @@
             			<?php if ( $fa_googleplus ) : ?>
 						<li>
 						<a target="_blank" href="<?php echo esc_html( $fa_googleplus ); ?>">
-		            		<i class="fa fa-googleplus"></i>
+		            		<i class="fa fa-google-plus"></i>
 	            		</a>
             			</li>
             			<?php endif; ?>

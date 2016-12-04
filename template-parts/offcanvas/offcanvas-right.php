@@ -9,8 +9,6 @@ global $custom_header_logo,
 	   $custom_header_top_bar_phone;
 
 
-
-
 ?>
 
 	<!-- OffCanvas Menu -->
@@ -21,7 +19,7 @@ global $custom_header_logo,
 
 
 
-		<div class="offcanvas_close"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+		
 
 
 
@@ -31,15 +29,10 @@ global $custom_header_logo,
 
 		<div class="offcanvas-menu-content">
 
+		<span class="offcanvas_close"><a href="#" class="close-thik"></a></span>
+
 				<div class="offcanvas-header">
 					<ul>
-						
-						<?php if ( !empty($custom_header_top_bar_email )) : ?>
-						<li class="email">
-							<a href="mailto: <?php echo $custom_header_top_bar_email; ?> "><i class="fa fa-envelope" aria-hidden="true"></i>
-							<?php echo esc_html($custom_header_top_bar_email); ?></a>
-						</li>
-						<?php endif; ?>
 						
 						<li class="cta">
 							<a class="free-quote" href="#">Free Project Quote</a>
