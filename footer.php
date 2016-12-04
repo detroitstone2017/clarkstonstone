@@ -81,16 +81,11 @@
 
     <div class="freequote-overlay">
         <div class="freequote-form">
+            <span class="custom-form-close-btn-1"><i class="fa fa-times"></i></span>
             <?php echo do_shortcode('[contact-form-7 id="10456" title="Contact"]'); ?>
         </div>
     </div>
 
-
-     <div class="upload-overlay">
-        <div class="upload-form">
-            <?php echo do_shortcode('[contact-form-7 id="10487" title="Upload"]'); ?>
-        </div>
-    </div>
 
 
 
