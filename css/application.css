@@ -3278,6 +3278,55 @@ img.rounded {
   padding: 40px 30px 30px;
 }
 
+.freequote-overlay .freequote-form .custom-form-close-btn-1,
+.freequote-overlay .freequote-form .btn-close-upload,
+.freequote-overlay .upload-form .custom-form-close-btn-1,
+.freequote-overlay .upload-form .btn-close-upload,
+.upload-overlay .freequote-form .custom-form-close-btn-1,
+.upload-overlay .freequote-form .btn-close-upload,
+.upload-overlay .upload-form .custom-form-close-btn-1,
+.upload-overlay .upload-form .btn-close-upload {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 9999;
+  cursor: pointer;
+  color: #3496E8;
+  font-size: 22px;
+  background: #000;
+  color: #fff;
+  padding: 5.5px 7px;
+  font-weight: lighter;
+  line-height: 0;
+  text-align: center;
+  vertical-align: text-bottom;
+  width: 25px;
+  height: 25px;
+}
+
+.freequote-overlay .freequote-form .custom-form-close-btn-1 .close-thik,
+.freequote-overlay .freequote-form .btn-close-upload .close-thik,
+.freequote-overlay .upload-form .custom-form-close-btn-1 .close-thik,
+.freequote-overlay .upload-form .btn-close-upload .close-thik,
+.upload-overlay .freequote-form .custom-form-close-btn-1 .close-thik,
+.upload-overlay .freequote-form .btn-close-upload .close-thik,
+.upload-overlay .upload-form .custom-form-close-btn-1 .close-thik,
+.upload-overlay .upload-form .btn-close-upload .close-thik {
+  color: #FFF;
+  font: 14px/100% arial, sans-serif;
+}
+
+.freequote-overlay .freequote-form .custom-form-close-btn-1 .close-thik:after,
+.freequote-overlay .freequote-form .btn-close-upload .close-thik:after,
+.freequote-overlay .upload-form .custom-form-close-btn-1 .close-thik:after,
+.freequote-overlay .upload-form .btn-close-upload .close-thik:after,
+.upload-overlay .freequote-form .custom-form-close-btn-1 .close-thik:after,
+.upload-overlay .freequote-form .btn-close-upload .close-thik:after,
+.upload-overlay .upload-form .custom-form-close-btn-1 .close-thik:after,
+.upload-overlay .upload-form .btn-close-upload .close-thik:after {
+  content: '✖';
+}
+
 .freequote-overlay .freequote-form form.wpcf7-form,
 .freequote-overlay .upload-form form.wpcf7-form,
 .upload-overlay .freequote-form form.wpcf7-form,

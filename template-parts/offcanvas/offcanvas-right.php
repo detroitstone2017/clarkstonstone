@@ -36,7 +36,7 @@ global $custom_header_logo,
 						
 						<li class="cta">
 							<a class="free-quote" href="#">Free Project Quote</a>
-							<a href="tel: <?php echo $custom_header_top_bar_phone; ?> "> <?php echo $custom_header_top_bar_phone; ?></a>
+							<a href="tel: <?php echo $custom_header_top_bar_phone; ?> "> <i class="fa fa-phone-square" aria-hidden="true"></i> <?php echo $custom_header_top_bar_phone; ?></a>
 
 						</li>
 

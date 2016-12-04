@@ -81,7 +81,7 @@
 
     <div class="freequote-overlay">
         <div class="freequote-form">
-            <span class="custom-form-close-btn-1"><i class="fa fa-times"></i></span>
+            <span class="custom-form-close-btn-1"><a href="#" class="close-thik"></a></span>
             <?php echo do_shortcode('[contact-form-7 id="10456" title="Contact"]'); ?>
         </div>
     </div>

@@ -12,7 +12,7 @@ global $custom_footer_text;
 
   <div class="upload-overlay">
         <div class="upload-form">
-            <span class="btn-close-upload"><i class="fa fa-times"></i></span>
+            <span class="btn-close-upload"><a href="#" class="close-thik"></a></span>
             <?php echo do_shortcode('[contact-form-7 id="10487" title="Upload"]'); ?>
         </div>
     </div>
