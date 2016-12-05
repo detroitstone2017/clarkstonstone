@@ -3261,6 +3261,7 @@ img.rounded {
   right: 0px;
   padding: 5px 10px 5px 10px;
   cursor: pointer;
+  z-index: 999999;
 }
 
 .map-overlay .close-map-btn .close-thik {

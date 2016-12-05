@@ -240,9 +240,9 @@ jQuery(function($) {
 
 	  $('.close-map-btn').click(function() {
 
-	  		if (   $('.freequote-overlay').hasClass('active')  )
+	  		if (   $('.map-overlay').hasClass('active')  )
 	  		{
-	  			$('.freequote-overlay').removeClass('active');
+	  			$('.map-overlay').removeClass('active');
 	  		}
 	  });
 
