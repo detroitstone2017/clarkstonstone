@@ -190,6 +190,8 @@ jQuery(function($) {
 	  });
 
 
+
+	// Overlay Open
 	   
 
 	  $('li.cta .free-quote').click(function() {
@@ -199,12 +201,21 @@ jQuery(function($) {
 	  });
 
 
-
 	  $('.button.upload-form').click(function() {
 
 	  	$('.upload-overlay').addClass('active');
 
 	  });
+
+
+	  $('.address-open-map').click(function() {
+
+	  	$('.map-overlay').addClass('active');
+
+	  });
+
+
+	  // Overlay Close Btn
 
 
 	   $('.btn-close-upload').click(function() {
@@ -227,6 +238,18 @@ jQuery(function($) {
 
 
 
+	  $('.close-map-btn').click(function() {
+
+	  		if (   $('.freequote-overlay').hasClass('active')  )
+	  		{
+	  			$('.freequote-overlay').removeClass('active');
+	  		}
+	  });
+
+
+	  // Click on Overlay
+
+
 	  $(document).on('click', '.freequote-overlay', function(e) {
 
 	  	if (  $(this).is(e.target) ) {
@@ -236,6 +259,14 @@ jQuery(function($) {
 	  });
 
 	  $(document).on('click', '.upload-overlay', function(e) {
+
+	  	if (  $(this).is(e.target) ) {
+	  		$(this).removeClass('active');
+	  	}
+
+	  });
+
+	   $(document).on('click', '.map-overlay', function(e) {
 
 	  	if (  $(this).is(e.target) ) {
 	  		$(this).removeClass('active');

@@ -87,6 +87,15 @@
     </div>
 
 
+    <div class="map-overlay">
+        <span class="close-map-btn"><a href="#" class="close-thik"></a></span>
+        <div class="map-container">
+            <iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11725.05926592956!2d-83.4160151!3d42.7192854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd17bc17606db09!2sClarkston+Stone+%26+Tile+Inc.!5e0!3m2!1sen!2sus!4v1478769877325" width="100%" height="100%" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        </div>
+    </div>
+
+
+
 
 
 </body>
