@@ -155,18 +155,29 @@ jQuery(function($) {
       	 // $('.slider-container').slick({});
 
 
-      	 $('.slider-container')
-		    .on('init', function(slick) {
-		        $('.slider-container').css({
-		        	'overflow' : 'visible', 'width' : 'auto'
-		        });
-		    })
-		    .slick({
+     //  	 $('.slider-container')
+		   //  .on('init', function(slick) {
+		   //      $('.slider-container').css({
+		   //      	'overflow' : 'visible', 'width' : 'auto'
+		   //      });
+		   //  })
+		   //  .slick({
+		   //      fade: true,
+		   //      focusOnSelect: true,
+		   //      lazyLoad: 'ondemand',
+		   //      speed: 3000,
+		   //      autoplay: true,
+		   //      autoplaySpeed: 3000
+	  		// });
+
+
+
+	  		 $('.clarkston-slider-container').slick({
 		        fade: true,
 		        focusOnSelect: true,
 		        lazyLoad: 'ondemand',
 		        speed: 3000,
-		        autoplay: true,
+		        // autoplay: true,
 		        autoplaySpeed: 3000
 	  		});
 	      
@@ -273,6 +284,13 @@ jQuery(function($) {
 	  	}
 
 	  });
+
+
+
+	   // test
+
+
+	   // $('.clarkston-slider-wrapper').height($('.clarkston-slider-wrapper .clarkston-slider-container .clarkstone-slide-item img').height());
 
 
 
