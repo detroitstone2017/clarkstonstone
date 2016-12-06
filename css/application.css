@@ -3839,6 +3839,14 @@ p.home-text {
   }
 }
 
+.clarkston-slider-wrapper-mobile .clarkston-slider-container {
+  visibility: hidden;
+}
+
+.clarkston-slider-wrapper-mobile .clarkston-slider-container.slick-initialized {
+  visibility: visible;
+}
+
 .clarkston-slider-wrapper-mobile .clarkston-slider-container .clarkstone-slide-item {
   position: relative;
 }

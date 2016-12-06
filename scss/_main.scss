@@ -1093,6 +1093,13 @@ p.home-text {padding-top:30px; text-align:center;}
 
     .clarkston-slider-container
     {
+        visibility: hidden;
+
+        &.slick-initialized 
+        { 
+        visibility: visible; 
+        }
+         
         .clarkstone-slide-item
         {
             position: relative;
