@@ -3558,12 +3558,6 @@ img.rounded {
   transition: all .5s;
 }
 
-@media screen and (min-width: 75em) {
-  .first img:hover {
-    filter: blur(1px);
-  }
-}
-
 @media print, screen and (min-width: 40em) {
   .intro {
     padding-bottom: 1.875rem;

@@ -40,7 +40,7 @@
     					<h1>Why pay more <br> when you can shop smart? </h1>
     				</div>
     				<div class="clarkstone-slider-btn">
-    					<a href="#" class="clarkston-slider-btn-link">Shop Local</a>
+    					<a href="/shop-local/" class="clarkston-slider-btn-link">Shop Local</a>
     				</div>
     			</div>
     			<img src="http://clarkstonstone.com/wp-content/uploads/2016/11/tiles-clarkston.jpg" alt="">
@@ -51,7 +51,7 @@
     					<h1>Why pay more to <br> Home Depot or Lowes? </h1>
     				</div>
     				<div class="clarkstone-slider-btn">
-    					<a href="#" class="clarkston-slider-btn-link">Shop Local</a>
+    					<a href="/shop-local/" class="clarkston-slider-btn-link">Shop Local</a>
     				</div>
     			</div>
     			<img src="http://clarkstonstone.com/wp-content/uploads/2016/11/granite-countertops-clarkston.jpg" alt="">
@@ -62,7 +62,7 @@
     					<h1>Why pay more to <br> Home Depot or Lowes? </h1>
     				</div>
     				<div class="clarkstone-slider-btn">
-    					<a href="#" class="clarkston-slider-btn-link">Shop Local</a>
+    					<a href="/shop-local/" class="clarkston-slider-btn-link">Shop Local</a>
     				</div>
     			</div>
     			<img src="http://clarkstonstone.com/wp-content/uploads/2016/11/quartz-countertops-clarkston.jpg" alt="">
@@ -84,7 +84,7 @@
     					<h1>Why pay more <br> when you can shop smart? </h1>
     				</div>
     				<div class="clarkstone-slider-btn">
-    					<a href="#" class="clarkston-slider-btn-link">Shop Local</a>
+    					<a href="/shop-local/" class="clarkston-slider-btn-link">Shop Local</a>
     				</div>
     			</div>
     			<img src="http://clarkstonstone.com/wp-content/uploads/2016/12/granite-countertops-clarkston-mobile.jpg" alt="">
@@ -95,7 +95,7 @@
     					<h1>Why pay more to <br> Home Depot or Lowes? </h1>
     				</div>
     				<div class="clarkstone-slider-btn">
-    					<a href="#" class="clarkston-slider-btn-link">Shop Local</a>
+    					<a href="/shop-local/" class="clarkston-slider-btn-link">Shop Local</a>
     				</div>
     			</div>
     			<img src="http://clarkstonstone.com/wp-content/uploads/2016/12/marble-countertops-clarkston-mobile.jpg" alt="">
@@ -106,7 +106,7 @@
     					<h1>Why pay more to <br> Home Depot or Lowes? </h1>
     				</div>
     				<div class="clarkstone-slider-btn">
-    					<a href="#" class="clarkston-slider-btn-link">Shop Local</a>
+    					<a href="/shop-local/" class="clarkston-slider-btn-link">Shop Local</a>
     				</div>
     			</div>
     			<img src="http://clarkstonstone.com/wp-content/uploads/2016/12/quartz-countertops-clarkston-cuartz.jpg" alt="">
@@ -118,7 +118,7 @@
     					<h1>Why pay more to <br> Home Depot or Lowes? </h1>
     				</div>
     				<div class="clarkstone-slider-btn">
-    					<a href="#" class="clarkston-slider-btn-link">Shop Local</a>
+    					<a href="/shop-local/" class="clarkston-slider-btn-link">Shop Local</a>
     				</div>
     			</div>
     			<img src="http://clarkstonstone.com/wp-content/uploads/2016/12/tile-countertops-clarkston-mobile.jpg" alt="">
