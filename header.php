@@ -24,6 +24,10 @@
 
     <?php get_template_part( 'template-parts/headers/header', $custom_header_layout ); ?>
 
+
+
+<?php if ( is_front_page()  ) : ?>    
+
     <!-- Slider Desktop -->
 
 	<div class="clarkston-slider-wrapper">
@@ -123,6 +127,10 @@
 		</div>
 
 	</div>
+
+
+<?php endif; ?>
+
 
 
         <div class="page-wrapper">                
