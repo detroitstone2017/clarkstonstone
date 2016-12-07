@@ -1,4 +1,4 @@
-<!-- Site Header Version 1 -->
+<!-- Site Header Version 1 --> 
 
 <?php 
 
@@ -75,6 +75,11 @@ global $custom_header_logo,
 
 		</div>
 
+		<!-- phone number only landscape under 768 -->
+		<div class="phone-conditional">
+			<a class="phone-number-landscape" href="tel: <?php echo $custom_header_top_bar_phone; ?> "> <i class="fa fa-phone-square" aria-hidden="true"></i> <?php echo $custom_header_top_bar_phone; ?></a>
+		</div>	
+		
 		<!-- OffCanvas Menu Open Icon -->
 
 		<div class="offcanvas-menu-icon hide-for-large">
@@ -127,4 +132,4 @@ global $custom_header_logo,
 
 </header>
 
-<!-- end Site Header -->
+<!-- end Site Header
