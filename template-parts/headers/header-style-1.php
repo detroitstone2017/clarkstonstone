@@ -132,4 +132,4 @@ global $custom_header_logo,
 
 </header>
 
-<!-- end Site Header
+<!-- end Site Header -->

@@ -241,6 +241,29 @@
 			</div>	
 		</div>
 
+		<div class="header-top-bar-mobile">
+			
+			<div class="header-top-bar-mobile-adress">
+				
+			  	  <?php if ( $custom_header_top_bar_widget == 1 ) {
+
+			            dynamic_sidebar('header_top_bar_widget_area'); 	
+					}
+
+					?>
+					
+			</div>
+			<?php if ( !empty($custom_header_top_bar_phone )) : ?>
+
+			<div class="header-top-bar-mobile-phone">
+				<a href="tel: <?php echo $custom_header_top_bar_phone; ?> ">
+				<i class="fa fa-phone-square" aria-hidden="true"> </i> <?php echo esc_html($custom_header_top_bar_phone); ?>
+				</a>
+			</div>
+
+			<?php endif; ?>
+		</div>
+
 
 	<?php endif; ?>
 

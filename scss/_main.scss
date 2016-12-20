@@ -1290,3 +1290,34 @@ p.home-text {padding-top:30px; text-align:center;}
 
     }
 }
+
+
+
+.header-top-bar-mobile
+{
+    display: none;
+    width: 100%;
+    font-size: 12px; 
+    padding: 15px; 
+    
+    @include breakpoint(768px down)
+    {
+        display: table;
+    }
+    
+    .header-top-bar-mobile-adress
+    {
+        display: table-cell;
+        vertical-align: middle;
+        width: 60%; 
+        text-align: left;
+    }
+
+    .header-top-bar-mobile-phone
+    {
+        display: table-cell;
+        vertical-align: middle;
+        width: 40%; 
+        text-align: right;
+    }
+}

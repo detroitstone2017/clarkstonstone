@@ -3982,6 +3982,33 @@ p.home-text {
   border-radius: 5px;
 }
 
+.header-top-bar-mobile {
+  display: none;
+  width: 100%;
+  font-size: 12px;
+  padding: 15px;
+}
+
+@media screen and (max-width: 48em) {
+  .header-top-bar-mobile {
+    display: table;
+  }
+}
+
+.header-top-bar-mobile .header-top-bar-mobile-adress {
+  display: table-cell;
+  vertical-align: middle;
+  width: 60%;
+  text-align: left;
+}
+
+.header-top-bar-mobile .header-top-bar-mobile-phone {
+  display: table-cell;
+  vertical-align: middle;
+  width: 40%;
+  text-align: right;
+}
+
 body {
   width: 100%;
   overflow-x: hidden;
