@@ -4002,6 +4002,12 @@ p.home-text {
   text-align: left;
 }
 
+@media screen and (max-width: 25.125em) {
+  .header-top-bar-mobile .header-top-bar-mobile-adress span {
+    display: none;
+  }
+}
+
 .header-top-bar-mobile .header-top-bar-mobile-phone {
   display: table-cell;
   vertical-align: middle;

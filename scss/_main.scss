@@ -1304,6 +1304,7 @@ p.home-text {padding-top:30px; text-align:center;}
     {
         display: table;
     }
+
     
     .header-top-bar-mobile-adress
     {
@@ -1311,6 +1312,14 @@ p.home-text {padding-top:30px; text-align:center;}
         vertical-align: middle;
         width: 60%; 
         text-align: left;
+        
+        @include breakpoint(402px down)
+        {
+            span
+            {
+                display: none
+            }
+        }
     }
 
     .header-top-bar-mobile-phone
